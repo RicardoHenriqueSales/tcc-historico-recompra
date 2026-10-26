@@ -1,0 +1,295 @@
+{
+  "fonte": "Chen, D. (2015). Online Retail. UCI. DOI 10.24432/C5BW33. CC BY 4.0.",
+  "download_url": "https://archive.ics.uci.edu/static/public/352/online+retail.zip",
+  "sha256_xlsx": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d",
+  "referencia": "2011-12-10",
+  "inicio": "2010-12-01 08:26:00",
+  "fim": "2011-12-09 12:50:00",
+  "auditoria": [
+    {
+      "etapa": "Base original",
+      "linhas": 541909,
+      "clientes_identificados": 4372,
+      "notas": 25900
+    },
+    {
+      "etapa": "Sem duplicatas exatas nas oito colunas",
+      "linhas": 536641,
+      "clientes_identificados": 4372,
+      "notas": 25900
+    },
+    {
+      "etapa": "Com CustomerID",
+      "linhas": 401604,
+      "clientes_identificados": 4372,
+      "notas": 22190
+    },
+    {
+      "etapa": "Sem notas iniciadas por C",
+      "linhas": 392732,
+      "clientes_identificados": 4339,
+      "notas": 18536
+    },
+    {
+      "etapa": "Quantidade positiva",
+      "linhas": 392732,
+      "clientes_identificados": 4339,
+      "notas": 18536
+    },
+    {
+      "etapa": "Preco unitario positivo",
+      "linhas": 392692,
+      "clientes_identificados": 4338,
+      "notas": 18532
+    },
+    {
+      "etapa": "Data valida",
+      "linhas": 392692,
+      "clientes_identificados": 4338,
+      "notas": 18532
+    }
+  ],
+  "linhas_vendas": 392692,
+  "notas_vendas": 18532,
+  "dias_cliente": 16763,
+  "clientes_vendas": 4338,
+  "clientes_elegiveis": 1916,
+  "clientes_excluidos_poucas_compras": 2422,
+  "vendas_positivas_total_gbp": 8887208.889999999,
+  "vendas_elegiveis_gbp": 7318199.43,
+  "valor_absoluto_linhas_negativas_identificadas_gbp": 608689.47,
+  "maior_linha_venda_gbp": 168469.6,
+  "maior_cliente_pct_vendas": 3.8288929220940897,
+  "imc": {
+    "count": 1916.0,
+    "mean": 59.6391110523444,
+    "std": 35.93936481199977,
+    "min": 2.8396946564885495,
+    "10%": 19.342105263157897,
+    "25%": 32.27272727272727,
+    "50%": 53.18333333333334,
+    "75%": 79.66666666666667,
+    "90%": 109.0,
+    "95%": 129.0,
+    "max": 185.5
+  },
+  "cv_mediano": 0.6292105136149311,
+  "pct_cv_maior_1": 15.501043841336118,
+  "matriz": [
+    {
+      "grupo": "Nenhuma regra",
+      "clientes": 1587,
+      "vendas_gbp": 6696927.68,
+      "pct_clientes": 82.8288100209,
+      "pct_vendas": 91.5105927907
+    },
+    {
+      "grupo": "Somente fixa",
+      "clientes": 60,
+      "vendas_gbp": 70925.9,
+      "pct_clientes": 3.1315240084,
+      "pct_vendas": 0.9691714564
+    },
+    {
+      "grupo": "Somente individualizada",
+      "clientes": 75,
+      "vendas_gbp": 277844.37,
+      "pct_clientes": 3.9144050104,
+      "pct_vendas": 3.796622006
+    },
+    {
+      "grupo": "Ambas as regras",
+      "clientes": 194,
+      "vendas_gbp": 272501.48,
+      "pct_clientes": 10.1252609603,
+      "pct_vendas": 3.7236137469
+    }
+  ],
+  "sensibilidade": [
+    {
+      "multiplicador": 1.2,
+      "clientes": 1916,
+      "alertas_individualizados": 371,
+      "pct_alertas": 19.363256784968684,
+      "vendas_alertas_gbp": 811475.21,
+      "somente_fixa": 30,
+      "somente_individualizada": 147,
+      "ambas": 224
+    },
+    {
+      "multiplicador": 1.6,
+      "clientes": 1916,
+      "alertas_individualizados": 269,
+      "pct_alertas": 14.039665970772441,
+      "vendas_alertas_gbp": 550345.8500000001,
+      "somente_fixa": 60,
+      "somente_individualizada": 75,
+      "ambas": 194
+    },
+    {
+      "multiplicador": 2.0,
+      "clientes": 1916,
+      "alertas_individualizados": 200,
+      "pct_alertas": 10.438413361169102,
+      "vendas_alertas_gbp": 440135.17,
+      "somente_fixa": 100,
+      "somente_individualizada": 46,
+      "ambas": 154
+    }
+  ],
+  "cortes_temporais": [
+    {
+      "data_referencia": "2011-09-01",
+      "clientes_elegiveis": 1223,
+      "alertas_fixa": 152,
+      "alertas_individualizada": 268,
+      "pct_divergencia": 12.59198691741619,
+      "somente_fixa": 19,
+      "somente_individualizada": 135
+    },
+    {
+      "data_referencia": "2011-10-01",
+      "clientes_elegiveis": 1404,
+      "alertas_fixa": 189,
+      "alertas_individualizada": 252,
+      "pct_divergencia": 8.76068376068376,
+      "somente_fixa": 30,
+      "somente_individualizada": 93
+    },
+    {
+      "data_referencia": "2011-11-01",
+      "clientes_elegiveis": 1592,
+      "alertas_fixa": 228,
+      "alertas_individualizada": 277,
+      "pct_divergencia": 7.977386934673366,
+      "somente_fixa": 39,
+      "somente_individualizada": 88
+    },
+    {
+      "data_referencia": "2011-12-10",
+      "clientes_elegiveis": 1916,
+      "alertas_fixa": 254,
+      "alertas_individualizada": 269,
+      "pct_divergencia": 7.045929018789145,
+      "somente_fixa": 60,
+      "somente_individualizada": 75
+    }
+  ],
+  "minimo_5_compras": {
+    "clientes": 1026,
+    "pct_divergencia": 4.580896686159844
+  },
+  "exemplos": [
+    {
+      "CustomerID": 14646,
+      "primeira_compra": "2010-12-20T00:00:00.000",
+      "ultima_compra": "2011-12-08T00:00:00.000",
+      "dias_compra": 45,
+      "vendas_gbp": 280206.02,
+      "recencia_dias": 2,
+      "imc_dias": 8.0227272727,
+      "cv_intervalos": 0.9562861502,
+      "limiar_dias": 12.8363636364,
+      "desvio_ciclos": 0.2492917847,
+      "alerta_fixa": false,
+      "alerta_individualizada": false,
+      "grupo": "Nenhuma regra"
+    },
+    {
+      "CustomerID": 14565,
+      "primeira_compra": "2010-12-13T00:00:00.000",
+      "ultima_compra": "2011-09-05T00:00:00.000",
+      "dias_compra": 4,
+      "vendas_gbp": 3099.12,
+      "recencia_dias": 96,
+      "imc_dias": 88.6666666667,
+      "cv_intervalos": 0.7788762414,
+      "limiar_dias": 141.8666666667,
+      "desvio_ciclos": 1.0827067669,
+      "alerta_fixa": true,
+      "alerta_individualizada": false,
+      "grupo": "Somente fixa"
+    },
+    {
+      "CustomerID": 16029,
+      "primeira_compra": "2010-12-01T00:00:00.000",
+      "ultima_compra": "2011-11-01T00:00:00.000",
+      "dias_compra": 39,
+      "vendas_gbp": 80850.84,
+      "recencia_dias": 39,
+      "imc_dias": 8.8157894737,
+      "cv_intervalos": 0.642136365,
+      "limiar_dias": 14.1052631579,
+      "desvio_ciclos": 4.423880597,
+      "alerta_fixa": false,
+      "alerta_individualizada": true,
+      "grupo": "Somente individualizada"
+    },
+    {
+      "CustomerID": 16180,
+      "primeira_compra": "2011-04-01T00:00:00.000",
+      "ultima_compra": "2011-08-31T00:00:00.000",
+      "dias_compra": 7,
+      "vendas_gbp": 10254.18,
+      "recencia_dias": 101,
+      "imc_dias": 25.3333333333,
+      "cv_intervalos": 0.3193873984,
+      "limiar_dias": 40.5333333333,
+      "desvio_ciclos": 3.9868421053,
+      "alerta_fixa": true,
+      "alerta_individualizada": true,
+      "grupo": "Ambas as regras"
+    }
+  ],
+  "verificacoes": "contagens, somas, formula IMC, exclusividade de grupos e monotonicidade verificadas",
+  "janelas_antecipacao": [
+    {
+      "minimo_dias": 3,
+      "antecedencia_pct": 10,
+      "clientes_elegiveis": 1916,
+      "clientes": 55,
+      "pct_elegiveis": 2.8705636743215033,
+      "vendas_gbp": 160925.17
+    },
+    {
+      "minimo_dias": 3,
+      "antecedencia_pct": 20,
+      "clientes_elegiveis": 1916,
+      "clientes": 118,
+      "pct_elegiveis": 6.15866388308977,
+      "vendas_gbp": 367477.24
+    },
+    {
+      "minimo_dias": 3,
+      "antecedencia_pct": 30,
+      "clientes_elegiveis": 1916,
+      "clientes": 201,
+      "pct_elegiveis": 10.490605427974947,
+      "vendas_gbp": 806234.98
+    },
+    {
+      "minimo_dias": 5,
+      "antecedencia_pct": 10,
+      "clientes_elegiveis": 1026,
+      "clientes": 31,
+      "pct_elegiveis": 3.0214424951267054,
+      "vendas_gbp": 125556.09
+    },
+    {
+      "minimo_dias": 5,
+      "antecedencia_pct": 20,
+      "clientes_elegiveis": 1026,
+      "clientes": 58,
+      "pct_elegiveis": 5.653021442495127,
+      "vendas_gbp": 282764.8
+    },
+    {
+      "minimo_dias": 5,
+      "antecedencia_pct": 30,
+      "clientes_elegiveis": 1026,
+      "clientes": 111,
+      "pct_elegiveis": 10.818713450292398,
+      "vendas_gbp": 685254.63
+    }
+  ]
+}
